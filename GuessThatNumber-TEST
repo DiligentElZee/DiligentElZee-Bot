@@ -1,0 +1,424 @@
+#Guess thet number
+import random
+print('press ENTER to continue')
+input('INSTRUCTIONS:')
+input('1. If you get it right, be sure to KEEP entering that number untill you are at the end!')
+input('2. ~BE SURE, THAT THE NUMBER YOU GUESS, IS LESS THAN 10!~ (This will be reminded to you each round!)')
+input('3. NEVER choose a number OVER 10, or any given number, it will end your game!')
+input('4. You have 4, technically 5 (since "0" counts as well!) tries per round. If you waste all of your tries, it`s Ǵ͔͍͠Ȁ͙̯̱̈̓M͈̆E ̰̕O͍̤̥̓̒̋͗ͅV̛͎̯̑E̪̹͊̓Ṙ͉͙͕̏͑͟͞')
+understand = input('Do you understand these instructions? Y/N: ')
+
+start = input('Press ENTER to start!')
+
+secret_number = random.randrange(1,10,1)
+print('ROUND 1')
+name = input('ENTER YOUR USERNAME (for later purpose): ')
+print('~BE SURE, THAT THE NUMBER YOU GUESS, IS LESS THAN 10!~')
+secret_number = random.randrange(1,10,1)
+print('Total tries: 4')
+n = input('Guess the secret number between 1 & 10:')
+n = int(n) #Convert user input into an intger
+
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 3')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 3')
+        
+        n = input('Guess the secret number between 1 & 10:')
+        n = int(n)
+        
+        if n == secret_number:
+            print('You got it!')
+        else:
+            if n > secret_number:
+                print('Your guess was too high')
+                print('Tries: 2')
+            else:
+                print('Your guess was too low')
+                print('Tries left: 2')
+                
+n = input('Guess the secret number between 1 & 10:')
+n = int(n)
+                     
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 1')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 1')
+                        
+n = input('Guess the secret number between 1 & 10:')
+n = int(n)
+                            
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 0')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 0')
+                                   
+n = input('Guess the secret number between 1 & 10:')
+n = int(n)
+
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Uh oh...͓̼̫͒̔̕')
+        print('The number was:', secret_number, '!')
+    else:
+        print('Your guess was too low')
+        print('Uhh... NO!')
+        print('Do better next time, alright? The number was:', secret_number,'!')
+        
+
+
+
+
+print('LEADERBOARD: ')
+
+
+
+
+print('1. Diligent ElZee - ∞')
+
+
+
+if n == secret_number:
+    print('2.', name, ' - 1')
+else:
+    print('2.', name, ' - 0')
+player_score = input('ENTER YOUR CURRENT SCORE, TO MOVE ON TO ROUND 2 (Medium): ')
+player_score = int(player_score)
+
+print('ROUND 2')
+secret_number = random.randrange(1,15,1)
+print('~BE SURE, THAT THE NUMBER YOU GUESS, IS LESS THAN 15!~')
+secret_number = random.randrange(1,15,1)
+print('Total tries: 4')
+n = input('Guess the secret number between 1 & 15:')
+n = int(n) #Convert user input into an intger
+
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 3')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 3')
+        
+        n = input('Guess the secret number between 1 & 15:')
+        n = int(n)
+        
+        if n == secret_number:
+            print('You got it!')
+        else:
+            if n > secret_number:
+                print('Your guess was too high')
+                print('Tries: 2')
+            else:
+                print('Your guess was too low')
+                print('Tries left: 2')
+                
+n = input('Guess the secret number between 1 & 15:')
+n = int(n)
+                     
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 1')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 1')
+                        
+n = input('Guess the secret number between 1 & 15:')
+n = int(n)
+                            
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 0')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 0')
+                                   
+n = input('Guess the secret number between 1 & 15:')
+n = int(n)
+
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Ǵ͔͍͠Ȁ͙̯̱̈̓M͈̆E ̰̕O͍̤̥̓̒̋͗ͅV̛͎̯̑E̪̹͊̓Ṙ͉͙͕̏͑͟͞!͓̼̫͒̔̕')
+        print('The number was:', secret_number, '!')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Do better next time, alright? The number was:', secret_number,'!')
+                
+
+
+
+
+
+print('LEADERBOARD: ')
+
+
+
+
+print('1. Diligent ElZee - ∞')
+
+
+
+
+if n == secret_number:
+    print('2.', name, ' -', player_score + 1)
+else:
+    print('2.', name, ' - ', player_score)
+
+player_score = input('ENTER YOUR CURRENT SCORE, TO MOVE ON TO ROUND  (HARD): ')
+player_score = int(player_score)
+
+print('ROUND 3')
+secret_number = random.randrange(1,30,1)
+print('~BE SURE, THAT THE NUMBER YOU GUESS, IS LESS THAN 15!~')
+secret_number = random.randrange(1,30,1)
+print('Total tries: 4')
+n = input('Guess the secret number between 1 & 30:')
+n = int(n) #Convert user input into an intger
+
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 3')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 3')
+        
+        n = input('Guess the secret number between 1 & 30:')
+        n = int(n)
+        
+        if n == secret_number:
+            print('You got it!')
+        else:
+            if n > secret_number:
+                print('Your guess was too high')
+                print('Tries: 2')
+            else:
+                print('Your guess was too low')
+                print('Tries left: 2')
+                
+n = input('Guess the secret number between 1 & 30:')
+n = int(n)
+                     
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 1')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 1')
+                        
+n = input('Guess the secret number between 1 & 30:')
+n = int(n)
+                            
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 0')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 0')
+                                   
+n = input('Guess the secret number between 1 & 30:')
+n = int(n)
+
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Big sed͉͙͕̏͑͟͞!͓̼̫͒̔̕')
+        print('The number was:', secret_number, '!')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Do better next time, alright? The number was:', secret_number,'!')
+                
+
+
+
+
+
+print('LEADERBOARD: ')
+
+
+
+
+print('1. Diligent ElZee - ∞')
+
+
+
+
+if n == secret_number:
+    print('2.', name, ' -', player_score + 1)
+else:
+    print('2.', name, ' - ', player_score)
+    
+input('ENTER YOUR CURRENT SCORE HERE, TO MOVE ON TO THE ~FINAL ROUND~! `Impossible?`:')
+
+print('ROUND 4 - IMPOSSIBLE? -')
+
+secret_number = random.randrange(1,35,1)
+print('~BE SURE, THAT THE NUMBER YOU GUESS, IS LESS THAN 30!~')
+secret_number = random.randrange(1,35,1)
+print('Total tries: 4')
+n = input('Guess the secret number between 1 & 35:')
+n = int(n) #Convert user input into an intger
+
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 3')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 3')
+        
+        n = input('Guess the secret number between 1 & 35:')
+        n = int(n)
+        
+        if n == secret_number:
+            print('You got it!')
+        else:
+            if n > secret_number:
+                print('Your guess was too high')
+                print('Tries: 2')
+            else:
+                print('Your guess was too low')
+                print('Tries left: 2')
+                
+n = input('Guess the secret number between 1 & 35:')
+n = int(n)
+                     
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 1')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 1')
+                        
+n = input('Guess the secret number between 1 & 35:')
+n = int(n)
+                            
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Try again!')
+        print('Number of tries left: 0')
+    else:
+        print('Your guess was too low')
+        print('Try again!')
+        print('Tries remaning: 0')
+                                   
+n = input('Guess the secret number between 1 & 35:')
+n = int(n)
+
+if n == secret_number:
+    print('You got it!')
+else:
+    if n > secret_number:
+        print('Your guess was too high')
+        print('Ǵ͔͍͠Ȁ͙̯̱̈̓M͈̆E ̰̕O͍̤̥̓̒̋͗ͅV̛͎̯̑E̪̹͊̓Ṙ͉͙͕̏͑͟͞!͓̼̫͒̔̕')
+        print('The number was:', secret_number, '!')
+    else:
+        print('Your guess was too low')
+        print('Try again soon!')
+        print('Do better next time, alright? The number was:', secret_number,'!')
+        print('Thanks for playing') #this is done at end in all cases
+                
+
+
+
+
+
+print('LEADERBOARD: ')
+
+
+
+
+print('1. Diligent ElZee - ∞')
+
+
+
+
+if n == secret_number:
+    print('2.', name, ' -', player_score + 1)
+else:
+    print('2.', name, ' - ', player_score)
+
+player_score = input('Your score: ')
+player_score = int(player_score)
+
+
+print('GG', name, '! Your final score:', player_score, '!')
+
+input('use ENTER to continue!')
+input('Be sure to support Diligent ElZee, by joining his Discord Server, and subscribe to his YT channel!')
+discord_invite = input('Discord:  https://discord.gg/invite/hvJURVP  ')
+youtube_url = input('YT:  https://www.youtube.com/channel/UC6f0gRFhWWgT6-6aE_Tyt5w?view_as=subscriber  ')
+input('Please be sure co copy, cmd + c, and paste, cmd + v, the URLs into your browser!')
+bye = input('Untill you run me again, bye!')
